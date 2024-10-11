@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planq Pilates App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+  <header>
+    <h1>planq</h1>
+    <nav class="menu-nav">
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="#download" class="btn">Download App</a>
+  </header>
+
+  <main>
+    <h2>The world of pilates in the palm of your hand</h2>
+    <h3>Build a strong and flexible physique with this amazing app that guides you through foundational pilates exercises.</h3>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="{{ url_for('static', filename='images/pose.jpg') }}" alt="Pose" width="320" height="400">
+        </div>
+        <div class="flip-card-back">
+          <p>Choose from dozens of different exercises in our library.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="{{ url_for('static', filename='images/leaf.jpg') }}" alt="leaf" width="320" height="400">
+        </div>
+        <div class="flip-card-back">
+          <p>Access video guides to help you learn on the go.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="{{ url_for('static', filename='images/mat.jpg') }}" alt="Mat" width="320" height="400">
+        </div>
+        <div class="flip-card-back">
+          <p>Track your progress and join the Planq community.</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="about">
+      <h4>"In 10 sessions, you’ll feel the difference, in 20 sessions, you’ll see the difference, and in 30 sessions, you’ll have a whole new body." – Joseph Pilates</h4>
+    </section>
+
+    <section id="testimonials">
+      <h4>What our users say</h4>
+      <div class="testimonial">
+          <p>"Planq has transformed my fitness routine. I feel stronger every day!" – Sarah J.</p>
+      </div>
+      <div class="testimonial">
+          <p>"I love how easy it is to follow the workouts from anywhere!" – David K.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2024 Planq Pilates | <a href="#contact">Contact Us</a> | <a href="#privacy">Privacy Policy</a></p>
+    <div class="social-links">
+        <a href="#"><img src="{{ url_for('static', filename='images/facebook.png') }}" alt="Facebook" width="30"></a>
+        <a href="#"><img src="{{ url_for('static', filename='images/x.png') }}" alt="X" width="30"></a>
+        <a href="#"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram" width="30"></a>
+    </div>
+  </footer>
+</body>
+</html>
