@@ -21,9 +21,9 @@ header {
 }
 
 h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 70px;
   color: #345328;
-  font-family: 'Playfair Display', serif;
 }
 
 h2 {
